@@ -76,6 +76,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/Agat/Desktop/לימודים/שנה א/סמסטר ב/תכנות מתקדם/מטלות/HW6/ErrorsHandlings.c">
+			<Option target="HW6"/>
+		</Unit>
+		<Unit filename="/Users/Agat/Desktop/לימודים/שנה א/סמסטר ב/תכנות מתקדם/מטלות/HW6/ErrorsHandlings.h">
+			<Option target="HW6"/>
+		</Unit>
 		<Unit filename="/Users/Agat/Desktop/לימודים/שנה א/סמסטר ב/תכנות מתקדם/מטלות/HW6/main.c">
 			<Option target="HW6"/>
 		</Unit>

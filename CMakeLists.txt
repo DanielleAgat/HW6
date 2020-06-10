@@ -3,4 +3,4 @@ project(HW6 C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(HW6 main.c)
+add_executable(HW6 main.c ErrorsHandlings.h ErrorsHandlings.c)

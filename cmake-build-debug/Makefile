@@ -123,6 +123,33 @@ HW6/fast:
 	$(MAKE) -f CMakeFiles/HW6.dir/build.make CMakeFiles/HW6.dir/build
 .PHONY : HW6/fast
 
+ErrorsHandlings.o: ErrorsHandlings.c.o
+
+.PHONY : ErrorsHandlings.o
+
+# target to build an object file
+ErrorsHandlings.c.o:
+	$(MAKE) -f CMakeFiles/HW6.dir/build.make CMakeFiles/HW6.dir/ErrorsHandlings.c.o
+.PHONY : ErrorsHandlings.c.o
+
+ErrorsHandlings.i: ErrorsHandlings.c.i
+
+.PHONY : ErrorsHandlings.i
+
+# target to preprocess a source file
+ErrorsHandlings.c.i:
+	$(MAKE) -f CMakeFiles/HW6.dir/build.make CMakeFiles/HW6.dir/ErrorsHandlings.c.i
+.PHONY : ErrorsHandlings.c.i
+
+ErrorsHandlings.s: ErrorsHandlings.c.s
+
+.PHONY : ErrorsHandlings.s
+
+# target to generate assembly for a file
+ErrorsHandlings.c.s:
+	$(MAKE) -f CMakeFiles/HW6.dir/build.make CMakeFiles/HW6.dir/ErrorsHandlings.c.s
+.PHONY : ErrorsHandlings.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... HW6"
+	@echo "... ErrorsHandlings.o"
+	@echo "... ErrorsHandlings.i"
+	@echo "... ErrorsHandlings.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

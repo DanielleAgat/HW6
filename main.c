@@ -17,6 +17,8 @@ typedef struct _short_client
 } Short_client;
 
 
+Short_client* createShortClientArr(int n);
+
 void main() {
     int n;
     Short_client * arr;
@@ -25,7 +27,7 @@ void main() {
 
     printf("Please enter the number of clients: ");
     scanf("%d", &n);
-    arr = createShortClientArr( n);
+    arr = createShortClientArr(n);
     gets(id);
     phone = searchClientByID(arr,n,id);
     if(phone == NULL)
@@ -35,4 +37,9 @@ void main() {
         free(phone);
     }
     free(arr);
+}
+
+Short_client* createShortClientArr(int n){
+    Client* clientArr = (Client*)malloc(sizeof(Client) * n);
+
 }
