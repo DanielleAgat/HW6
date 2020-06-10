@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/HW6.dir/Client.c.o"
   "CMakeFiles/HW6.dir/Compress.c.o"
   "CMakeFiles/HW6.dir/ErrorsHandlings.c.o"
   "CMakeFiles/HW6.dir/SearchClient.c.o"

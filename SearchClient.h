@@ -7,8 +7,15 @@
 #include "stdlib.h"
 #include "ErrorsHandlings.h"
 #include "Client.h"
+#include "Compress.h"
+
+#define EOS '\0' //End Of String
+#define mask 0x0F
 
 //TODO: Add description
 char* searchClientByID(Short_client* arr, int size, char id[]);
 
-#endif //HW6_SEARCHCLIENT_H
+//TODO: Add description
+void decompressStr(char arr[],int size,unsigned char short_arr[]);
+
+#endif

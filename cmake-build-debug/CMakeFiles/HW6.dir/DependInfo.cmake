@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/Users/Agat/Desktop/לימודים/שנה א/סמסטר ב/תכנות מתקדם/מטלות/HW6/Client.c" "/Users/Agat/Desktop/לימודים/שנה א/סמסטר ב/תכנות מתקדם/מטלות/HW6/cmake-build-debug/CMakeFiles/HW6.dir/Client.c.o"
   "/Users/Agat/Desktop/לימודים/שנה א/סמסטר ב/תכנות מתקדם/מטלות/HW6/Compress.c" "/Users/Agat/Desktop/לימודים/שנה א/סמסטר ב/תכנות מתקדם/מטלות/HW6/cmake-build-debug/CMakeFiles/HW6.dir/Compress.c.o"
   "/Users/Agat/Desktop/לימודים/שנה א/סמסטר ב/תכנות מתקדם/מטלות/HW6/ErrorsHandlings.c" "/Users/Agat/Desktop/לימודים/שנה א/סמסטר ב/תכנות מתקדם/מטלות/HW6/cmake-build-debug/CMakeFiles/HW6.dir/ErrorsHandlings.c.o"
   "/Users/Agat/Desktop/לימודים/שנה א/סמסטר ב/תכנות מתקדם/מטלות/HW6/SearchClient.c" "/Users/Agat/Desktop/לימודים/שנה א/סמסטר ב/תכנות מתקדם/מטלות/HW6/cmake-build-debug/CMakeFiles/HW6.dir/SearchClient.c.o"

@@ -76,6 +76,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/Agat/Desktop/לימודים/שנה א/סמסטר ב/תכנות מתקדם/מטלות/HW6/Client.c">
+			<Option target="HW6"/>
+		</Unit>
 		<Unit filename="/Users/Agat/Desktop/לימודים/שנה א/סמסטר ב/תכנות מתקדם/מטלות/HW6/Client.h">
 			<Option target="HW6"/>
 		</Unit>

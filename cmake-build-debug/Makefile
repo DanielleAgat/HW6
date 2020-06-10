@@ -123,6 +123,33 @@ HW6/fast:
 	$(MAKE) -f CMakeFiles/HW6.dir/build.make CMakeFiles/HW6.dir/build
 .PHONY : HW6/fast
 
+Client.o: Client.c.o
+
+.PHONY : Client.o
+
+# target to build an object file
+Client.c.o:
+	$(MAKE) -f CMakeFiles/HW6.dir/build.make CMakeFiles/HW6.dir/Client.c.o
+.PHONY : Client.c.o
+
+Client.i: Client.c.i
+
+.PHONY : Client.i
+
+# target to preprocess a source file
+Client.c.i:
+	$(MAKE) -f CMakeFiles/HW6.dir/build.make CMakeFiles/HW6.dir/Client.c.i
+.PHONY : Client.c.i
+
+Client.s: Client.c.s
+
+.PHONY : Client.s
+
+# target to generate assembly for a file
+Client.c.s:
+	$(MAKE) -f CMakeFiles/HW6.dir/build.make CMakeFiles/HW6.dir/Client.c.s
+.PHONY : Client.c.s
+
 Compress.o: Compress.c.o
 
 .PHONY : Compress.o
@@ -240,6 +267,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... HW6"
+	@echo "... Client.o"
+	@echo "... Client.i"
+	@echo "... Client.s"
 	@echo "... Compress.o"
 	@echo "... Compress.i"
 	@echo "... Compress.s"

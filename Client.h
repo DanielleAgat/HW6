@@ -4,6 +4,11 @@
 #ifndef HW6_CLIENT_H
 #define HW6_CLIENT_H
 
+#include "stdio.h"
+#include "stdlib.h"
+#include "ErrorsHandlings.h"
+#include "Client.h"
+
 #define idLength 9
 #define phoneLength 12
 #define idSrtLen 4
@@ -20,4 +25,10 @@ typedef struct _short_client {
     unsigned char short_phone[phoneSrtLen];
 } Short_client;
 
-#endif //HW6_CLIENT_H
+//TODO: Add description
+Client* createClientArr(int n);
+
+//TODO: Add description
+void scanClientDetails(Client* clientArr, int size);
+
+#endif

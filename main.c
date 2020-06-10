@@ -7,6 +7,7 @@
 #include "stdlib.h"
 #include "Compress.h"
 #include "Client.h"
+#include "SearchClient.h"
 
 
 void main() {

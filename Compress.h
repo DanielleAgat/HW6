@@ -13,16 +13,10 @@
 Short_client* createShortClientArr(int n);
 
 //TODO: Add description
-Client* createClientArr(int n);
-
-//TODO: Add description
-void scanClientDetails(Client* clientArr, int size);
-
-//TODO: Add description
 Short_client* compressClientArr(Client* clientArr, int size);
 
 //TODO: Add description
 void compressStr(char arr[],int size,unsigned char short_arr[]);
 
 
-#endif //HW6_COMPRESS_H
+#endif
