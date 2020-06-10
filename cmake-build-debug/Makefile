@@ -123,6 +123,33 @@ HW6/fast:
 	$(MAKE) -f CMakeFiles/HW6.dir/build.make CMakeFiles/HW6.dir/build
 .PHONY : HW6/fast
 
+Compress.o: Compress.c.o
+
+.PHONY : Compress.o
+
+# target to build an object file
+Compress.c.o:
+	$(MAKE) -f CMakeFiles/HW6.dir/build.make CMakeFiles/HW6.dir/Compress.c.o
+.PHONY : Compress.c.o
+
+Compress.i: Compress.c.i
+
+.PHONY : Compress.i
+
+# target to preprocess a source file
+Compress.c.i:
+	$(MAKE) -f CMakeFiles/HW6.dir/build.make CMakeFiles/HW6.dir/Compress.c.i
+.PHONY : Compress.c.i
+
+Compress.s: Compress.c.s
+
+.PHONY : Compress.s
+
+# target to generate assembly for a file
+Compress.c.s:
+	$(MAKE) -f CMakeFiles/HW6.dir/build.make CMakeFiles/HW6.dir/Compress.c.s
+.PHONY : Compress.c.s
+
 ErrorsHandlings.o: ErrorsHandlings.c.o
 
 .PHONY : ErrorsHandlings.o
@@ -149,6 +176,33 @@ ErrorsHandlings.s: ErrorsHandlings.c.s
 ErrorsHandlings.c.s:
 	$(MAKE) -f CMakeFiles/HW6.dir/build.make CMakeFiles/HW6.dir/ErrorsHandlings.c.s
 .PHONY : ErrorsHandlings.c.s
+
+SearchClient.o: SearchClient.c.o
+
+.PHONY : SearchClient.o
+
+# target to build an object file
+SearchClient.c.o:
+	$(MAKE) -f CMakeFiles/HW6.dir/build.make CMakeFiles/HW6.dir/SearchClient.c.o
+.PHONY : SearchClient.c.o
+
+SearchClient.i: SearchClient.c.i
+
+.PHONY : SearchClient.i
+
+# target to preprocess a source file
+SearchClient.c.i:
+	$(MAKE) -f CMakeFiles/HW6.dir/build.make CMakeFiles/HW6.dir/SearchClient.c.i
+.PHONY : SearchClient.c.i
+
+SearchClient.s: SearchClient.c.s
+
+.PHONY : SearchClient.s
+
+# target to generate assembly for a file
+SearchClient.c.s:
+	$(MAKE) -f CMakeFiles/HW6.dir/build.make CMakeFiles/HW6.dir/SearchClient.c.s
+.PHONY : SearchClient.c.s
 
 main.o: main.c.o
 
@@ -186,9 +240,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... HW6"
+	@echo "... Compress.o"
+	@echo "... Compress.i"
+	@echo "... Compress.s"
 	@echo "... ErrorsHandlings.o"
 	@echo "... ErrorsHandlings.i"
 	@echo "... ErrorsHandlings.s"
+	@echo "... SearchClient.o"
+	@echo "... SearchClient.i"
+	@echo "... SearchClient.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/HW6.dir/Compress.c.o"
   "CMakeFiles/HW6.dir/ErrorsHandlings.c.o"
+  "CMakeFiles/HW6.dir/SearchClient.c.o"
   "CMakeFiles/HW6.dir/main.c.o"
   "HW6"
   "HW6.pdb"
