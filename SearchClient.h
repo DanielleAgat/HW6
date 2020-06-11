@@ -8,14 +8,19 @@
 #include "ErrorsHandlings.h"
 #include "Client.h"
 #include "Compress.h"
+#include "string.h"
+#include "stdbool.h"
 
 #define EOS '\0' //End Of String
 #define mask 0x0F
 
-//TODO: Add description
+//This function gets a compressed phone book, it's size and an id and returns the matching phone number
 char* searchClientByID(Short_client* arr, int size, char id[]);
 
-//TODO: Add description
+//This function gets a compressed numeric string and updates a given array with its decompressed value.
 void decompressStr(char arr[],int size,unsigned char short_arr[]);
+
+//This function gets a compressed ID and returns 'true' if equal ; 'false' otherwise.
+bool isIDEqual(unsigned char arr1[], unsigned char arr2[]);
 
 #endif

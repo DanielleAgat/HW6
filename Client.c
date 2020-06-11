@@ -11,8 +11,9 @@ Client* createClientArr(int n){
 }
 
 void scanClientDetails(Client* clientArr, int size){
-    for(int i=0 ; i <size ; i++){
-        fgets(clientArr[i].id,idLength,stdin);
-        fgets(clientArr[i].phone,phoneLength,stdin);
+    for(int i=0 ; i < size ; i++){
+        scanf("%s",clientArr[i].id);
+        scanf("%s",clientArr[i].phone);
     }
+    fflush(stdin);
 }

@@ -9,13 +9,13 @@
 #include "ErrorsHandlings.h"
 #include "Client.h"
 
-//TODO: Add description
+//This function creates a clients array and then compress its values.
 Short_client* createShortClientArr(int n);
 
-//TODO: Add description
+//This function gets a client array and returns a compressed client array.
 Short_client* compressClientArr(Client* clientArr, int size);
 
-//TODO: Add description
+//This function compresses a single numeric string.
 void compressStr(char arr[],int size,unsigned char short_arr[]);
 
 

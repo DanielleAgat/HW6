@@ -1,7 +1,9 @@
 //Student's name: Danielle Agat Levi
 //Student's ID: 313357329
 
-//TODO: Add program's description
+/* This program is a compressed phone book. It gets client details from a user and compress them into half size.
+ * Then It gets an ID from a user and prints it's phone number
+ */
 
 #include <stdio.h>
 #include "stdlib.h"

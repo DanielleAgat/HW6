@@ -27,13 +27,14 @@ void compressStr(char arr[],int size,unsigned char short_arr[]){
 
     for (int i = 0; i < size - 1 ; i++) {
         if(arr[i] == '-') {
-            i++;
         }
-        else if(i%2 == 0){
-            short_arr[j] = (arr[i] << 4);
+        else if((i%2 == 0 && i < 3) || (i%2 == 1 && i > 3)){
+            char numericChar = (arr[i] - '0') << 4;
+            short_arr[j] = numericChar;
         }
         else {
-            short_arr[j] = short_arr[j] | arr[i];
+            char numericChar = (arr[i] - '0');
+            short_arr[j] = short_arr[j] | numericChar;
             j++;
         }
     }

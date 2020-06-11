@@ -25,10 +25,10 @@ typedef struct _short_client {
     unsigned char short_phone[phoneSrtLen];
 } Short_client;
 
-//TODO: Add description
+//This function scans a number of clients and their info and returns a Client array.
 Client* createClientArr(int n);
 
-//TODO: Add description
+//This function scans client details.
 void scanClientDetails(Client* clientArr, int size);
 
 #endif
