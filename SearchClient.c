@@ -8,10 +8,10 @@ char* searchClientByID(Short_client* arr, int size,char id[]){
     char* phone = (char*)malloc(sizeof(char) * phoneLength);
     checkMemoryAllocation(phone);
 
-    compressStr(id,idLength,srtId);
+    compressID(id,idLength,srtId);
     for(int i = 0 ; i < size ; i++){
         if(isIDEqual(arr[i].short_id,srtId)){
-            decompressStr(phone,phoneLength,arr[i].short_phone);
+            decompressPhone(phone,phoneLength,arr[i].short_phone);
             return phone;
         }
     }
@@ -19,7 +19,7 @@ char* searchClientByID(Short_client* arr, int size,char id[]){
     return NULL;
 }
 
-void decompressStr(char* arr,int size,unsigned char short_arr[]) {
+void decompressPhone(char* arr,int size,unsigned char short_arr[]) {
     int j = 0;
 
     for (int i = 0; i < size - 1 ; i++) {

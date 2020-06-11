@@ -18,7 +18,7 @@
 char* searchClientByID(Short_client* arr, int size, char id[]);
 
 //This function gets a compressed numeric string and updates a given array with its decompressed value.
-void decompressStr(char arr[],int size,unsigned char short_arr[]);
+void decompressPhone(char arr[],int size,unsigned char short_arr[]);
 
 //This function gets a compressed ID and returns 'true' if equal ; 'false' otherwise.
 bool isIDEqual(unsigned char arr1[], unsigned char arr2[]);

@@ -15,8 +15,11 @@ Short_client* createShortClientArr(int n);
 //This function gets a client array and returns a compressed client array.
 Short_client* compressClientArr(Client* clientArr, int size);
 
-//This function compresses a single numeric string.
-void compressStr(char arr[],int size,unsigned char short_arr[]);
+//This function compresses a single phone number.
+void compressPhone(char arr[],int size,unsigned char short_arr[]);
+
+//This function compress a single ID
+void compressID(char arr[],int size,unsigned char short_arr[]);
 
 
 #endif

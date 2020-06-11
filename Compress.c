@@ -13,8 +13,8 @@ Short_client* compressClientArr(Client* clientArr, int size) {
     checkMemoryAllocation(srtCln);
 
     for (int i = 0; i < size; i++){
-        compressStr(clientArr[i].id,idLength,srtCln[i].short_id);
-        compressStr(clientArr[i].phone,phoneLength,srtCln[i].short_phone);
+        compressID(clientArr[i].id,idLength,srtCln[i].short_id);
+        compressPhone(clientArr[i].phone,phoneLength,srtCln[i].short_phone);
     }
 
     free(clientArr);
@@ -22,13 +22,29 @@ Short_client* compressClientArr(Client* clientArr, int size) {
 }
 
 
-void compressStr(char arr[],int size,unsigned char short_arr[]){
+void compressPhone(char arr[],int size,unsigned char short_arr[]){
     int j = 0;
 
     for (int i = 0; i < size - 1 ; i++) {
         if(arr[i] == '-') {
         }
         else if((i%2 == 0 && i < 3) || (i%2 == 1 && i > 3)){
+            char numericChar = (arr[i] - '0') << 4;
+            short_arr[j] = numericChar;
+        }
+        else {
+            char numericChar = (arr[i] - '0');
+            short_arr[j] = short_arr[j] | numericChar;
+            j++;
+        }
+    }
+}
+
+void compressID(char arr[],int size,unsigned char short_arr[]){
+    int j = 0;
+
+    for (int i = 0; i < size - 1 ; i++) {
+        if(i%2 == 0){
             char numericChar = (arr[i] - '0') << 4;
             short_arr[j] = numericChar;
         }
